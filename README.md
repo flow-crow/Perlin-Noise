@@ -1,7 +1,7 @@
 
 # Perlin Noise
 
-A simple NumPy implementation of Perlin noise. Generates 3D or 4D procedural noise as an image or volume evolving over time respectively. Includes fractal, turbulent and ridge multiscale forms with tunable parameters.
+A fast NumPy implementation of Perlin noise. Generates 3D or 4D procedural noise as an image or volume evolving over time respectively. Includes fractal, turbulent and ridge multiscale forms with tunable parameters.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Tunable parameters include:
 - ```amplitude``` - Magnitude scaling factor 
 - ```lacunarity``` - Frequency scaling factor 
 
-The last three parameters are only relevant for the multiscale forms. Noise fields with parameters ```Nx```, ```Ny```, ```Nz```,```N_frames``` are generated with array dimensions (```Ny```, ```Nx```, ```Nz```,```N_frames```). Thus, 0th and 1st dimensions correspond to rows (```Ny```) and columns (```Nx```) and the last dimension always corresponds to the temporal dimension (```N_frames```). The temporal dimension is scaled during generation therefore the animation timescale is independent of the number of frames being generated.
+The last three parameters are only relevant for the multiscale forms. Noise fields with parameters ```Nx```, ```Ny```, ```Nz```,```N_frames``` are generated with array dimensions [```Ny```, ```Nx```, ```Nz```,```N_frames```]. Thus, 0th and 1st dimensions correspond to rows (```Ny```) and columns (```Nx```) and the last dimension always corresponds to the temporal dimension (```N_frames```). The temporal dimension is scaled during generation therefore the animation timescale is independent of the number of frames being generated.
 
 
 ## 2D Examples
@@ -27,10 +27,10 @@ The last three parameters are only relevant for the multiscale forms. Noise fiel
 ### Fractal Perlin Noise
 ![fractal perlin](gifs/fractal_perlin.gif)
 
-### Turbulent Perlin
+### Turbulent Perlin Noise
 ![turbulent perlin](gifs/turbulent_perlin.gif)
 
-### Ridge Perlin
+### Ridge Perlin Noise
 ![ridge perlin](gifs/ridge_perlin.gif)
 
 

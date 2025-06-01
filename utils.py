@@ -1,5 +1,6 @@
 import numpy as np
 from PIL import Image
+import matplotlib.pyplot as plt
 
 def normalise(input_array):
     return (input_array - input_array.min()) / (input_array.max() - input_array.min())
